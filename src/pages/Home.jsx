@@ -6,7 +6,7 @@ function Home() {
   return (
     <div className="home-container">
       <h1 style={{textAlign:'center'}}>This is the home page which contains 2 slices</h1>
-      <div className="row mt-4">
+      <div className="row">
         <div className="col-6">
           <User />
         </div>
