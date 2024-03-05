@@ -1,0 +1,53 @@
+/* Counter.css */
+.counter-container {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .counter-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center horizontally */
+    height: 10vh;
+  }
+  
+  .counter-button {
+    font-size: 1.5em;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #4caf50;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .counter-button:hover {
+    background-color: #45a049;
+  }
+  
+  .increment {
+    background-color: #2196f3;
+  }
+  
+  .increment:hover {
+    background-color: #0d47a1;
+  }
+  
+  .decrement {
+    background-color: #f44336;
+  }
+  
+  .decrement:hover {
+    background-color: #b71c1c;
+  }
+  
+  .counter-value {
+    font-size: 2em;
+    margin: 0 15px;
+    color: #333;
+    font-weight: bold;
+  }
+  
