@@ -12,6 +12,7 @@ const User = () => {
 
   const handleSetUser = () => {
     dispatch(setUser({ username, email }));
+    console.log("done")
   };
 
   return (
