@@ -10,19 +10,23 @@ const User = () => {
 
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
+  const [userSet, setUserSet] = useState(false); // State to track whether the user is set
 
   const handleSetUser = () => {
     dispatch(setUser({ username, email }));
+    setUserSet(true); // Set the state to true when the button is clicked
     console.log("User set successfully");
   };
 
   return (
     <div className="user-container">
       <h2>User Profile</h2>
-      <div className="user-info">
-        <p>Username: {user.username}</p>
-        <p>Email: {user.email}</p>
-      </div>
+      {userSet && ( // Render only if the user is set
+        <div className="user-info">
+          <p>Username: {user.username}</p>
+          <p>Email: {user.email}</p>
+        </div>
+      )}
       <div className="user-form">
         <input
           className="user-input"

@@ -20,6 +20,7 @@ export function Counter() {
         </button>
         <span className="counter-value">{count}</span>
         <button
+          disabled={count<1}
           className="counter-button decrement"
           aria-label="Decrement value"
           onClick={() => dispatch(decrement())}
