@@ -1,6 +1,7 @@
 import React from 'react'
 import { Counter } from '../features/counter/Counter'
 import User from '../features/users/User'
+import UseMemoLearning from '../components/functionComponents/UseMemoLearning';
 
 function Home() {
   return (
@@ -14,6 +15,8 @@ function Home() {
           <Counter />
         </div>
       </div>
+
+      <UseMemoLearning/>
     </div>
   );
 }
