@@ -1,6 +1,6 @@
 import React from 'react'
-import { Counter } from '../features/counter/counter'
-import User from '../features/users/user'
+import { Counter } from '../features/counter/Counter'
+import User from '../features/users/User'
 
 function Home() {
   return (
